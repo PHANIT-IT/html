@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit your profile!</title>
+    <style>
+        table {
+            width: 100%;
+        }
+        div {
+            font-weight: bold;
+        }
+        button {
+            position: relative;
+            left: 90%;
+            bottom: 20px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <form action="/my-backend/profile" method="POST" style="border: 3px solid black;">
+
+         <table cellspacing = "30px;">
+             <tr>
+                 <td colspan = "2" style="border: 1px solid black; background-color: grey;">
+                     <h2>Tell us about yourself</h2>
+                 </td>
+             </tr>
+             <tr>
+                 <td colspan="2">
+                    <hr color="black">
+                     <h4>Profile Information</h4>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                    <div>Last Name</div>
+                    <input type="text" name="lastname" style="width:100% ;">
+                 </td>
+                 <td>
+                    <div>First Name</div>
+                    <input type="text" name="firstname" style="width:100%">
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <div>Email</div>
+                     <input type="text" name="Email" style="width:100%">
+                 </td>
+                 <td>
+                    <div>Phone</div>
+                    <input type="text" name="Phone" style="width:100%">
+                </td>
+             </tr>
+             <tr>
+                 <td>
+                    <span><b>Gender</b> </span> 
+                 </td>
+                <td colspan="2">
+                    <input name="gender" type="radio" value="male"/> Male 
+                    <input name="gender" type="radio" value="female"/> Female
+             </td>
+             </tr>  
+         </table>
+         <hr color="black">
+         <table cellspacing="30px;">
+             <tr>
+                 <td><h3>Current Address</h3></td>
+             </tr>
+             <tr>
+                <td>
+                   <select name="city" style="width: 100%;">
+                     <option disabled selected>Province/City</option>
+                     <option value="Phnom Penh">Phnom Penh</option>
+                     <option value="Kampong Cham">Kampong Cham</option>
+                     <option value="Preyveng">Preyveng</option>
+                   </select>
+                </td>
+                <td>
+                   <select name="country" style="width: 100%;">
+                     <option value="" disabled selected>country</option>
+                     <option value="Cambodia">Cambodia</option>
+                     <option value="Veitnam">Veitnam</option>
+                     <option value="USA">USA</option>
+                   </select>
+                </td>
+                <td>
+                    <input type="text" name="postCode" placeholder="Post code" style="width: 100%;">
+                </td>     
+              </tr>
+         </table>
+         <table cellspacing="30px;">
+            <tr>
+                <td>
+                    <textarea name="address" style="width: 100%;" rows="3" placeholder="Address"></textarea>
+                </td>
+            </tr>
+            
+         </table>
+         <table cellspacing="30px;">
+            <tr>
+                <td colspan="2"><h4>Skills</h4></td>
+                <td colspan="2"><h4>Languages</h4></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" value="Designing">Designing
+                    <input type="checkbox" value="Database management">Database management
+                </td>
+                <td colspan="2">
+                    <input type="checkbox" value="English">English
+                    <input type="checkbox" value="Chinese">Chinese
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" value="Coding">Coding
+                    <input type="checkbox" value="Debug">Debug
+                </td>
+                <td colspan="2">
+                    <input type="checkbox" value="French">French
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Exeperience</h3>
+                </td>
+            </tr>
+         </table>
+         <table cellspacing="30px;">
+             <tr>
+                 <td>
+                     <div>From</div>
+                     <input type="text" style="width: 80%;"> <br><br>
+                     <input type="text" style="width: 80%;"> <br><br>
+                     <input type="text" style="width: 80%;"> <br><br>
+                     <input type="text" style="width: 80%;">
+                 </td>
+                 <td>
+                    <div>To</div>
+                    <input type="text" style="width: 80%;"> <br><br>
+                    <input type="text" style="width: 80%;"> <br><br>
+                    <input type="text" style="width: 80%;"> <br><br>
+                    <input type="text" style="width: 80%;">
+                 </td>
+                 <td>
+                    <div>Description</div>
+                    <input type="text" style="width: 100%;"> <br><br>
+                    <input type="text" style="width: 100%;"> <br><br>
+                    <input type="text" style="width: 100%;"> <br><br>
+                    <input type="text" style="width: 100%;">
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <div>Choose your profile photo</div> <br>
+                     <input type="file">
+                 </td>
+             </tr>
+         </table>
+              <button type="submit">Submiclet</button>
+              <hr color="black">
+              <br>
+     </form>
+</body>
+</html>
